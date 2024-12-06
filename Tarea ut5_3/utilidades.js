@@ -24,7 +24,7 @@ export function muestraTabla(main, array) {
         th.style.padding="5px";
         th.style.backgroundColor="#f2f2f2"
         //añadimos al tr el th
-        trTitulos.appendChild(th);
+        trTitulos.append(th);
 
     }
 
@@ -45,13 +45,13 @@ export function muestraTabla(main, array) {
             td.style.textAlign="center";
             td.style.padding="5px"
             //Metemos la celda en la fila
-            trDatos.appendChild(td);
+            trDatos.append(td);
         }
         //Incluimos la fila a la tabla
-        tabla.appendChild(trDatos);
+        tabla.append(trDatos);
     }
     //Alojamos la tabla en el elemento del dom que hayamos indicado
-    main.appendChild(tabla);
-    document.body.appendChild(main);
+    main.append(tabla);
+    document.body.append(main);
 }
 
